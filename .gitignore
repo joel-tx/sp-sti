@@ -328,3 +328,24 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+
+packages/
+IST/SpacePlanning/.vs/
+IST/SpacePlanning/CAD/obj/
+IST/SpacePlanning/CAD/bin/
+IST/SpacePlanning/Data/obj/
+IST/SpacePlanning/Data/bin/
+IST/SpacePlanning/IntegrationTest/obj/
+IST/SpacePlanning/IntegrationTest/bin/
+IST/SpacePlanning/Logic/obj/
+IST/SpacePlanning/Logic/bin/
+IST/SpacePlanning/Presentation/obj/
+IST/SpacePlanning/Presentation/bin/
+IST/SpacePlanning/UnitTest/obj/
+IST/SpacePlanning/UnitTest/bin/
+IST/SpacePlanning/Utilities/obj/
+IST/SpacePlanning/Utilities/bin/
+*.user
+*.map
+obj

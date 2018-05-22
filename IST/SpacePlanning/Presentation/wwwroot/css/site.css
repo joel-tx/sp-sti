@@ -1,0 +1,348 @@
+﻿/*root variables*/
+:root {
+    --gray-1-color: #D3D3D3;
+    --gray-2-color: #E4E4E3;
+    --default-text-color: #333333;
+    --btn-color: #1A9544;
+    --btn-color-2: #61A467;
+    --btn-color-3: #A0A09F;
+    --btn-hover-color: #DDDDDD;
+    --default-border-color: #c4c2c2;
+}
+
+/*set Lato as default font-family*/
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+
+/*italic text form placeholder*/
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+:-moz-placeholder {
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+}
+
+/*Navbar separation*/
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("../images/ist_background_layout.png");
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+}
+
+/*Navbar*/
+.navbar {
+    background-color: var(--gray-1-color);
+    border: 1px solid var(--default-border-color);
+}
+
+    .navbar .navbar-nav > li > a {
+        color: var(--default-text-color);
+    }
+
+    .navbar .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+.navbar-image {
+    max-height: 40px;
+}
+
+.navbar-image-container {
+    padding: 5px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+    .navbar-brand a {
+        color: var(--default-text-color);
+        text-decoration: none;
+    }
+
+.navbar-container {
+    border: none;
+    background-color: var(--gray-2-color);
+}
+
+/*Mobile*/
+@media screen and (orientation:portrait) {
+    .card {
+        padding: 30px 30px 15px 30px;
+        background-color: var(--gray-2-color);
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-group {
+        display: flex !important;
+    }
+
+    .navbar-image {
+        max-width: 243px;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 15px 35px !important;
+    }
+
+    .form-group {
+        display: block !important;
+        text-align: left !important;
+    }
+
+    .navbar-image {
+        padding: 11px 0;
+        max-width: 115px;
+    }
+
+    .navbar-brand {
+        padding: 15px 0;
+        font-size: 13px;
+    }
+}
+
+/*Login*/
+.card {
+    padding: 30px 30px 15px 30px;
+    background-color: var(--gray-2-color);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+    max-width: 550px;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+
+ /*Card component*/
+ 
+.card-header {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: var(--gray-1-color);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+    .card-header label {
+        font-weight: normal;
+    }
+
+.img-card {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin {
+    text-align: left;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.form-submit {
+    margin-top: 15px
+}
+
+.btn.btn-signin {
+    background-color: var(--btn-color);
+    padding: 0px;
+    font-weight: normal;
+    font-size: 17px;
+    height: 27px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+    .btn.btn-signin:hover,
+    .btn.btn-signin:active,
+    .btn.btn-signin:focus {
+        background-color: var(--btn-hover-color) !important;
+    }
+
+.btn-signin-sso {
+    background-color: var(--btn-color-2) !important;
+}
+
+.btn-forgot-passord {
+    background-color: var(--btn-color-3) !important;
+}
+
+.btn-default {
+    background-color: var(--btn-color);
+    color: white;
+}
+
+.form-tac-label {
+    margin: 10px 0 0 0;
+    color: rgb(104, 145, 162);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+    .form-tac-label:hover,
+    .form-tac-label:active,
+    .form-tac-label:focus {
+        color: rgb(12, 97, 33);
+    }
+
+.form-group {
+    display: flex;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.col-form-label {
+    margin: auto 0px;
+}
+
+.form-control {
+    border-radius: 13px;
+}
+
+.sso-container {
+    text-align: center;
+    display: block !important;
+    margin: 0 0 15px 0;
+}
+
+    .sso-container label {
+        margin-bottom: 10px;
+    }
+
+/*Terms and Conditions Modal*/
+.modal-header {
+    background-color: var(--gray-1-color);
+    border-radius: 6px 6px 0 0;
+}
+
+.modal-content form {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.modal-dialog,
+.modal-content {
+    height: 90%;
+}
+
+.modal-body {
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
